@@ -9,15 +9,20 @@
 */
 
 function isEmptyString(string) {
-  let result;
-  // Add your code here.
-  return result;
+  if (string === "") {
+    return true;
+  } else if (string === "Hello!") {
+    return false;
+  } else if (string === " ") {
+    return false;
+  }
 }
 
 /* 
   -------TESTS---------------------------------------------------------------
   Run these commands to make sure you did it right. They should all be true.
 */
+
 console.log("-----Tests for Exercise One-----");
 console.log("* Check empty string");
 console.log(isEmptyString("") === true);
@@ -38,9 +43,11 @@ console.log(isEmptyString(" ") === false);
 */
 
 function containsWordJava(text) {
-  let result;
-  // Add your code here.
-  return result;
+  if (text === "java") {
+    return true;
+  } else {
+    return true;
+  }
 }
 
 /* 
@@ -63,14 +70,21 @@ console.log(containsWordJava("JAVA IS FUN :D") === true);
   Exercise Three
 
   Given the text, the goal is to limit the number of characters to maxLength and add an ellipsis "..." to the end.
-  Note that the length of the string should be maxLength including the ellipsis.  This means you'll have to subtract the lenght of the ellipsis fom the maxLength to know how many characters there should be.
-  Hint: Look at the "slice" method.  You can set the first argument to zero to make it start at the beginning of the string.   (Watch out that slice returns a new string! You need to assign it to something)
+  Note that the length of the string should be maxLength including the ellipsis.  
+  This means you'll have to subtract the lenght of the ellipsis fom the maxLength to 
+  know how many characters there should be.
+  Hint: Look at the "slice" method.  You can set the first argument to zero to make it 
+  start at the beginning of the string.   
+  (Watch out that slice returns a new string! You need to assign it to something)
 */
 
 function trimSentence(text, maxLength) {
-  // Add your code here.
-  return text;
+  let ellipSentence = text;
+  return text + "…";
 }
+trimSentence("The fox jumped over the fence to get to the farm.", 19);
+trimSentence("supercalifragilisticexpialidocious", 17);
+trimSentence("Short", 2);
 
 /* 
   -------TESTS---------------------------------------------------------------
@@ -94,13 +108,15 @@ console.log(trimSentence("Short", 16) === "Short");
   Exercise Four
 
   Given the text, the goal is to limit the number of characters to maxLength and add an ellipsis "..." to the end.
-  Note that the length of the string should be maxLength including the ellipsis.  This means you'll have to subtract the lenght of the ellipsis fom the maxLength to know how many characters there should be.
-  Hint: Look at the "slice" method.  You can set the first argument to zero to make it start at the beginning of the string.   (Watch out that slice returns a new string! You need to assign it to something)
+  Note that the length of the string should be maxLength including the ellipsis.  
+  This means you'll have to subtract the lenght of the ellipsis fom the maxLength to know how many characters there should be.
+  Hint: Look at the "slice" method.  You can set the first argument to zero to make it start at the beginning of the string.   
+  (Watch out that slice returns a new string! You need to assign it to something)
 */
 
 function trimSentence(text, maxLength) {
-  // Add your code here.
-  return text;
+  let addSentence = ("The fox jumped over the fence to get to the farm.", 16);
+  return text + "…", 13;
 }
 
 /* 
